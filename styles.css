@@ -1,0 +1,95 @@
+/* Tipografías y ajustes de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Montserrat:wght@600&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #550655;
+    background-color: #6610f2;
+
+    background-image: url('imagenes/rosy.jpg'); /* Ruta actualizada a la imagen */
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el área del cuerpo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header, .hero {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-primary {
+    color: #fd0d21 !important;
+}
+
+.text-muted {
+    color: #ff0077 !important;
+}
+
+/* Efectos en los servicios */
+.card {
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(#240e85);
+}
+
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1580281657524-1e3a7f81c0c7');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(#00ff40);
+}
+
+.hero h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(90deg, #ff0077 0%, #6610f2 100%);
+}
+
+/* Footer */
+footer {
+    background-color: #65fd0d;
+    color: rgb( #0dd9fd);
+}
+
+/* Estilos para las secciones de servicios y contacto */
+#services, #contact {
+    background-image: url('imagenes/fondo-comun.jpg'); /* Ruta a la imagen común */
+    background-size: cover; /* Hace que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 50px 0; /* Ajusta el padding según sea necesario */
+    color: #fff; /* Asegura que el texto sea legible sobre la imagen */
+}
+
+/* Estilos adicionales para asegurar legibilidad en servicios */
+#services h2,
+#services .card {
+    color: #240e85; /* Asegura que el texto y las tarjetas sean visibles sobre la imagen */
+}
+
+/* Estilos adicionales para asegurar legibilidad en contacto */
+#contact h2,
+#contact form {
+    color: #6610f2; /* Asegura que el texto del encabezado y el formulario sean visibles */
+}
+
+#contact .form-control,
+#contact .btn {
+    background-color: rgba(#1d0204); /* Fondo semitransparente para los campos del formulario */
+    color: #890dfd; /* Asegura que el texto dentro del formulario sea visible */
+}
